@@ -1,40 +1,38 @@
 <DOCtYPE html!>
 <html>
-	<head>
-	  <title>MAGIC 8 BALL</title>
-<html>
-	<head>
-	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
-	  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  <head>
+    <title>MAGIC 8 BALL</title>
 
-	  <link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
-	<body>
-		<div class="page">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-			<header>
-				<h1>MAGIC&nbsp;<span>8</span>&nbsp;BALL</h1>
-			</header>
+  <body>
+    <div class="page">
 
-			<div class="ball">
-				<img id="8ball" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png">
-				<p id="answer" class="answer">THIS IS WHERE THE ANSWER GOES</p>
-			</div>
+      <header>
+        <h1>MAGIC&nbsp;<span>8</span>&nbsp;BALL</h1>
+      </header>
 
-			<div class="button">
-				<button id="questionButton">ASK ME ANYTHING </button>
-			</div>
+      <div class="ball">
+        <img id="8ball" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png">
+        <p id="answer" class="answer">THIS IS WHERE THE ANSWER GOES</p>
+      </div>
 
-			<footer>
-				<p>&copy; Skillcrush 2016</p>
-			</footer>
+      <div class="button">
+        <button id="questionButton">ASK ME ANYTHING </button>
+      </div>
 
-		  <script type="text/javascript" src="script.js"></script>
-	  </div>
-	</body>
-<style> 
+      <footer>
+        <p>&copy; Skillcrush 2016</p>
+      </footer>
+
+      <script type="text/javascript" src="script.js"></script>
+    </div>
+<style>
 .page {
   max-width: 960px;
   min-width: 300px;
@@ -100,9 +98,9 @@ footer p {
   font-size: 12px;
   font-size: .75em;
 }
-	</style>
+	  </style>
 <script>
-$(document).ready(function(){
+	$(document).ready(function(){
   
   var magic8Ball = {};
   magic8Ball.listofanswers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes, definitely.", "You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
@@ -133,7 +131,6 @@ $(document).ready(function(){
   
   $("#questionButton").click( onClick );
 });
-	</script>
-</html>
-	</body>
+	  </script>
+  </body>
 </html>
